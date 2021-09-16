@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c/estilos.css">
+    <link rel="icon" href="descarga.png">
+    <title>FILOSOFIA</title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Si necesitas una frase que te lleve al pensamiento profundo de click en el boton</h2>
+            <img src="img.jpg" alt="">
+            <a href="#" onclick="toggle()">VER</a>
+        </div>
+    </div>
+
+    <div id="popup">
+        <h2>ALBERT EINSTEIN</h2>
+        <p>"Si tu intencion es describir la verdad, haslo con sencillez y la elegancia déjasela al sastre"</p>
+        <a href="#" onclick="toggle()">close</a>
+        
+    </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        
+        
+        }
+    
+    </script>
+    
+</body>
+</html>
